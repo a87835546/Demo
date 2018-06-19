@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta  user-scalable = 'no' name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>HTML标题</title>
+</head>
+<body>
+    <button id="btn">HTML CALL APP</button>
+    <input type="text" id="input">
+    <button id="getValue">获取input里面输入的值</button>
+    <a href="one.html" target = "_black">下一个页面</a>
+</body>
+<script>
+    var btn = document.querySelector("#btn");
+    var input = document.querySelector("#input");
+    var btn1 = document.querySelector("#getValue");
+    input.onchange= function(e){
+        console.log(input.value)
+        // window.webkit.messageHandlers.passValue.postMessage(this.value);
+    }
+    btn1.onclick = function(){
+        window.webkit.messageHandlers.passValue.postMessage(input.value);
+    }
+    btn.onclick = function(){
+        console.log(111);
+        window.webkit.messageHandlers.test.postMessage("messageBody");
+
+    }
+
+    function passValue(v){
+        alert('app 成功调用 js 方法' + v);
+    }
+</script>
+
+</html>
