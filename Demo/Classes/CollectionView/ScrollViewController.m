@@ -17,7 +17,7 @@
 @implementation ScrollViewController
 -(NSMutableArray *)titles {
     if (!_titles ) {
-        _titles = [NSMutableArray arrayWithObjects:@"标题1",@"标题2",@"标题3",@"标题4",@"标题5",@"标题6",@"标题7",@"标题8",@"标题8",@"标题8",@"标题8", nil];
+        _titles = [NSMutableArray arrayWithObjects:@"标题1",@"标题2",@"标题3",@"标题4",@"标题5",@"标题6",@"标题7",@"标题8",@"标题8",@"标题1",@"标题2",@"标题3",@"标题4",@"标题5",@"标题6",@"标题7",@"标题8",@"标题8",@"标题8",@"标题8", nil];
     }
     return _titles;
 }

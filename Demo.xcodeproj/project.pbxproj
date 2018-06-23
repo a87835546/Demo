@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		260C5AAF20C97877005913EA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260C5AAE20C97877005913EA /* BaseViewController.m */; };
 		260C5AB120C98088005913EA /* one.html in Resources */ = {isa = PBXBuildFile; fileRef = 260C5AB020C98087005913EA /* one.html */; };
+		2628078E20DAA727003B2C6B /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2628078D20DAA727003B2C6B /* CustomButton.m */; };
+		2628079220DAAAB1003B2C6B /* CustomHitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2628079020DAAAB1003B2C6B /* CustomHitViewController.m */; };
+		2628079320DAAAB1003B2C6B /* CustomHitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2628079120DAAAB1003B2C6B /* CustomHitViewController.xib */; };
 		26AE13F720C9756F003768ED /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AE13F620C9756F003768ED /* BaseWebViewController.m */; };
 		410183A720AD8B1A00C1BCA3 /* AESCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 410183A620AD8B1A00C1BCA3 /* AESCipher.m */; };
 		410183AB20AEB3A600C1BCA3 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 410183AA20AEB3A600C1BCA3 /* CustomTabBar.m */; };
@@ -117,6 +120,11 @@
 		241A393CC9BAA6B1DE2E152A /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		260C5AAE20C97877005913EA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		260C5AB020C98087005913EA /* one.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = one.html; sourceTree = "<group>"; };
+		2628078C20DAA727003B2C6B /* CustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		2628078D20DAA727003B2C6B /* CustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		2628078F20DAAAB1003B2C6B /* CustomHitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomHitViewController.h; sourceTree = "<group>"; };
+		2628079020DAAAB1003B2C6B /* CustomHitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomHitViewController.m; sourceTree = "<group>"; };
+		2628079120DAAAB1003B2C6B /* CustomHitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHitViewController.xib; sourceTree = "<group>"; };
 		26AE13F520C9756F003768ED /* BaseWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
 		26AE13F620C9756F003768ED /* BaseWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
 		3ADFA30B481491E4CC43557D /* Pods-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -539,6 +547,8 @@
 				4123A3AE20AC424500BCB645 /* NSObject+Unrecongnized.m */,
 				4123A3AF20AC424500BCB645 /* Protector.h */,
 				4123A3B020AC424500BCB645 /* Protector.m */,
+				2628078C20DAA727003B2C6B /* CustomButton.h */,
+				2628078D20DAA727003B2C6B /* CustomButton.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -587,6 +597,9 @@
 				41A487E020C8038E00333AAF /* SelectPicViewController.m */,
 				411BB60320C93B60000CB1BE /* HTMLCallAppViewController.h */,
 				411BB60420C93B60000CB1BE /* HTMLCallAppViewController.m */,
+				2628078F20DAAAB1003B2C6B /* CustomHitViewController.h */,
+				2628079020DAAAB1003B2C6B /* CustomHitViewController.m */,
+				2628079120DAAAB1003B2C6B /* CustomHitViewController.xib */,
 				411BB60620C93CA6000CB1BE /* index.html */,
 				260C5AB020C98087005913EA /* one.html */,
 				41234BA620BE54A5005DDDB3 /* Test.xib */,
@@ -916,6 +929,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				411BB60720C93CA6000CB1BE /* index.html in Resources */,
+				2628079320DAAAB1003B2C6B /* CustomHitViewController.xib in Resources */,
 				410E3ACA20D20D4500680181 /* LICENSE.md in Resources */,
 				410E3ACB20D20D4500680181 /* README.md in Resources */,
 				417803D520A9973A0021DCF7 /* LaunchScreen.storyboard in Resources */,
@@ -1048,6 +1062,7 @@
 				4123A3BB20AC426900BCB645 /* DemoViewController.mm in Sources */,
 				410E3AC020D20D4500680181 /* IQUIViewController+Additions.m in Sources */,
 				410E3A8C20D0F62A00680181 /* ScrollViewController.m in Sources */,
+				2628079220DAAAB1003B2C6B /* CustomHitViewController.m in Sources */,
 				4157762720AD7609002FC2E7 /* MyViewController.m in Sources */,
 				4157762320AD7102002FC2E7 /* FMDatabaseQueue.m in Sources */,
 				4123A42920AD32C500BCB645 /* FMDBViewController.m in Sources */,
@@ -1058,6 +1073,7 @@
 				417803D820A9973A0021DCF7 /* main.m in Sources */,
 				415FE04620B547A000718230 /* RNViewController.m in Sources */,
 				4123A42620AD2D2B00BCB645 /* NSString+NSReplace.m in Sources */,
+				2628078E20DAA727003B2C6B /* CustomButton.m in Sources */,
 				410E3ABC20D20D4500680181 /* IQNSArray+Sort.m in Sources */,
 				410E3AC720D20D4500680181 /* IQToolbar.m in Sources */,
 				410E3AC820D20D4500680181 /* IQUIView+IQKeyboardToolbar.m in Sources */,

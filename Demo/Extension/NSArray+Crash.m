@@ -50,6 +50,9 @@
             YCLog(@"exception: %@", exception.reason);
             return nil;
         }
+        @finally{
+            YCLog(@"try catch finally");
+        }
         
     }else {
         return [self mutableObjectAtSafeIndex:index];

@@ -16,7 +16,7 @@
 
 -(NSDictionary *)dic {
     if (!_dic) {
-        _dic = [NSDictionary dictionaryWithObjects:@[@"UnrecognizedSelectorViewController",@"DESViewController",@"RSAViewController",@"MD5ViewController",@"AESViewController",@"FMDBViewController",@"RNViewController",@"XIBUseViewController",@"UploadFileViewController",@"SelectPicViewController",@"HTMLCallAppViewController"] forKeys:@[@"unrecognized selector(抛出没有找到方法的解决方式)",@"DES加密",@"RSA加密方法",@"MD5校验",@"AES加密",@"fmdb数据库的简单使用",@"RN通讯",@"xib使用",@"AFN上传文件",@"相册图片选择，拍照获取",@"HTML CALL APP"]];
+        _dic = [NSDictionary dictionaryWithObjects:@[@"UnrecognizedSelectorViewController",@"DESViewController",@"RSAViewController",@"MD5ViewController",@"AESViewController",@"FMDBViewController",@"RNViewController",@"XIBUseViewController",@"UploadFileViewController",@"SelectPicViewController",@"HTMLCallAppViewController",@"CustomHitViewController"] forKeys:@[@"unrecognized selector(抛出没有找到方法的解决方式)",@"DES加密",@"RSA加密方法",@"MD5校验",@"AES加密",@"fmdb数据库的简单使用",@"RN通讯",@"xib使用",@"AFN上传文件",@"相册图片选择，拍照获取",@"HTML CALL APP",@"自定义响应区域"]];
         
     }
     return _dic;
@@ -26,7 +26,11 @@
     [super viewDidLoad];
     self.naviTitle = @"demo集合";
     [self creatTableView];
-
+    float i = 0.132123113231321321;
+    double_t   f = 0.45456464654654654;
+    NSNumber *z = [NSNumber numberWithDouble:42135434546540.15465546465465456464654564654];
+    NSInteger y = 1231.14546546465;
+    YCLog(@"%f \n %ld \n %l",f,(long)y,z);
 }
 
 - (void)creatTableView {
