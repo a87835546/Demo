@@ -16,6 +16,8 @@ pod 'MJRefresh'
 pod 'MJExtension'
 pod 'SDWebImage'
 pod 'IQKeyboardManager'
+pod 'SAMKeychain'
+
 # 'node_modules'目录一般位于根目录中
 # 但是如果你的结构不同，那你就要根据实际路径修改下面的`:path`
 #pod 'React', :path => './reactnative/node_modules/react-native', :subspecs => [

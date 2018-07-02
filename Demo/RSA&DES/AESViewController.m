@@ -11,7 +11,10 @@
 #import "AESCipher.h"
 #define KAES_KEY @"1234567890123456"
 @interface AESViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *publicTextView;
+@property (weak, nonatomic) IBOutlet UITextView *resultTextView;
 
+@property (weak, nonatomic) IBOutlet UITextView *contentTextView;
 @end
 
 @implementation AESViewController
@@ -65,7 +68,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)encrypted:(UIButton *)sender {
+    
+    YCLog(@"加密密钥：%@ \n 加密内容：%@",self.publicTextView.text,self.contentTextView.text);
+}
 
+- (IBAction)deencrypted:(id)sender {
+    NSString *pub = self.publicTextView.text;
+    self.resultTextView.text = aesDecryptString(self.contentTextView.text, pub);
+    YCLog(@"%@",[self dictionaryWithJsonString:aesDecryptString(self.contentTextView.text, pub)]);
+
+}
 #pragma mark - 字典转换成字符串
 -(NSString *)convertToJsonData:(NSDictionary *)dict
 

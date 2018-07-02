@@ -15,7 +15,7 @@
 @implementation MyViewController
 -(NSDictionary *)dic {
     if (!_dic) {
-        _dic = [NSDictionary dictionaryWithObjects:@[@"ScrollViewController",@"CollectionViewController"] forKeys:@[@"简单九宫格",@"横向滑动collection"]];
+        _dic = [NSDictionary dictionaryWithObjects:@[@"ScrollViewController",@"CollectionViewController",@"BannerViewController"] forKeys:@[@"简单九宫格",@"横向滑动collection",@"banner"]];
         
     }
     return _dic;

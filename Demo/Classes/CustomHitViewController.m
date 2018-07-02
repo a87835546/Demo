@@ -8,6 +8,7 @@
 
 #import "CustomHitViewController.h"
 #import "CustomButton.h"
+#import "MyViewController.h"
 @interface CustomHitViewController ()
 @property (nonatomic,copy) NSMutableArray *array;
 
@@ -31,8 +32,6 @@
     [self.view addSubview:btn];
     btn.backgroundColor =[UIColor redColor];
     
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,6 +51,8 @@
 - (IBAction)click:(CustomButton *)sender {
     YCLog(@"clcik");
     [self.array objectAtIndex:100];
+    MyViewController *vc = [[MyViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

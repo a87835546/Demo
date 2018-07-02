@@ -7,16 +7,23 @@
 //
 
 #import "DemoViewController.h"
-
+#import <AFNetworking.h>
 @interface DemoViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, copy) NSDictionary *dic;
+@property (nonatomic,strong) NSMutableArray *mArr;
+
 @end
 
 @implementation DemoViewController
-
+-(NSMutableArray *)mArr {
+    if (!_mArr) {
+        _mArr = [NSMutableArray array];
+    }
+    return _mArr;
+}
 -(NSDictionary *)dic {
     if (!_dic) {
-        _dic = [NSDictionary dictionaryWithObjects:@[@"UnrecognizedSelectorViewController",@"DESViewController",@"RSAViewController",@"MD5ViewController",@"AESViewController",@"FMDBViewController",@"RNViewController",@"XIBUseViewController",@"UploadFileViewController",@"SelectPicViewController",@"HTMLCallAppViewController",@"CustomHitViewController"] forKeys:@[@"unrecognized selector(抛出没有找到方法的解决方式)",@"DES加密",@"RSA加密方法",@"MD5校验",@"AES加密",@"fmdb数据库的简单使用",@"RN通讯",@"xib使用",@"AFN上传文件",@"相册图片选择，拍照获取",@"HTML CALL APP",@"自定义响应区域"]];
+        _dic = [NSDictionary dictionaryWithObjects:@[@"UnrecognizedSelectorViewController",@"DESViewController",@"RSAViewController",@"MD5ViewController",@"AESViewController",@"FMDBViewController",@"RNViewController",@"XIBUseViewController",@"UploadFileViewController",@"SelectPicViewController",@"HTMLCallAppViewController",@"CustomHitViewController",@"KeyChainViewController",@"KVOViewController"] forKeys:@[@"unrecognized selector(抛出没有找到方法的解决方式)",@"DES加密",@"RSA加密方法",@"MD5校验",@"AES加密",@"fmdb数据库的简单使用",@"RN通讯",@"xib使用",@"AFN上传文件",@"相册图片选择，拍照获取",@"HTML CALL APP",@"自定义响应区域",@"key chain的使用",@"KVO的使用"]];
         
     }
     return _dic;
@@ -26,11 +33,10 @@
     [super viewDidLoad];
     self.naviTitle = @"demo集合";
     [self creatTableView];
-    float i = 0.132123113231321321;
-    double_t   f = 0.45456464654654654;
-    NSNumber *z = [NSNumber numberWithDouble:42135434546540.15465546465465456464654564654];
-    NSInteger y = 1231.14546546465;
-    YCLog(@"%f \n %ld \n %l",f,(long)y,z);
+    NSArray *arr = @[@"1",@"2"];
+    self.mArr = [NSMutableArray arrayWithArray:arr];
+    YCLog(@"%@",self.mArr.class);
+    [self.mArr removeAllObjects];
 }
 
 - (void)creatTableView {
@@ -64,6 +70,7 @@
     vc.naviTitle = self.dic.allKeys[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
